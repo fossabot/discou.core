@@ -1,6 +1,8 @@
+const client = require('./Elastic');
+
 class DiscouStorage {
   constructor() {
-    this.client = require('./Elastic');
+    this.client = client;
     this.errors = this.client.errors;
   }
 

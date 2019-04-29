@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prestart": "npx yarn test",
+    "prestart": "clear && npx yarn test",
     "start": "node .",
     "dev": "nodemon --exec 'npx yarn start' -w .",
     "test": "npx eslint ."
