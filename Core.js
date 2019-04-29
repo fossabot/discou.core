@@ -2,6 +2,10 @@ const Storage = require('./Storage');
 const Log = require('./Log');
 const Cli = require('./Cli');
 
-exports.Cli = new Cli('Discou');
-exports.Log = new Log();
-exports.Storage = new Storage();
+const cli = new Cli('Discou');
+const log = new Log();
+const storage = new Storage();
+
+exports.Cli = cli;
+exports.Log = log;
+exports.Storage = storage;
